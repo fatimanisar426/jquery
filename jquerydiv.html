@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+
+    $(document).ready(function(){
+        $(".box").click(function(){
+
+            var color=$(this).attr("data-color");
+            $(this).css("background", color);
+            
+        });
+    });
+
+
+
+    
+</script>
+
+<style>
+
+    .box {
+        width: 200px;
+        height: 200px;
+        margin: 20px;
+        float: left;
+        background-color: rgb(105, 245, 180);
+         border-radius: 10px;
+         text-align: center;
+         text-decoration: solid;
+         font-size: x-large;
+         font-style: italic;
+            border-radius: 30px 5px 30px 5px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    transition: border-radius 0.4s ease, background 0.4s ease;
+
+
+.box:hover{
+    border-radius: 50px;
+}
+
+        
+    }
+    body{
+        background-color: rgb(109, 214, 240);
+        transition: all ease 0.5s;
+    }
+
+
+</style>
+</head>
+
+<body>
+     <div class="box" data-color="red">Red</div>
+
+          <div class="box" data-color="green">green</div>
+
+               <div class="box" data-color="blue">blue</div>
+
+                    <div class="box" data-color="pink">pink</div>
+
+                         <div class="box" data-color="yellow">yellow</div>
+
+                              <div class="box" data-color="orange">orange</div>
+
+                                   <div class="box" data-color="purple">purple</div>
+
+                                        <div class="box" data-color="brown">brown</div>
+
+                                             <div class="box" data-color="white">white</div>
+
+                                                  <div class="box" data-color="black">black</div>
+
+ 
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
